@@ -44,3 +44,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
+
+#define IGNORE_MOD_TAP_INTERRUPT // Mod Tap keyと通常キーを連続して高速に押したとき、両方のキーをTapとして扱うようにする
