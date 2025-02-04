@@ -40,9 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5 // レイヤー数
 
-#define TAPPING_TERM 150 // ホールド判定される時間(ミリ秒)
+#define TAPPING_TERM 170 // ホールド判定される時間(ミリ秒)
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
-
-#define IGNORE_MOD_TAP_INTERRUPT // Mod Tap keyと通常キーを連続して高速に押したとき、両方のキーをTapとして扱うようにする
