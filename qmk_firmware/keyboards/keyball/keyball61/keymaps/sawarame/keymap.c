@@ -107,11 +107,19 @@ bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
             return true;
         case LCTL_T(KC_A):
             return true;
-        case LSFT_T(KC_A):
+        case LSFT_T(KC_Z):
+            return true;
+        case LALT_T(KC_X):
+            return true;
+        case LGUI_T(KC_C):
             return true;
         case RCTL_T(KC_SEMICOLON):
             return true;
-        case RCTL_T(KC_SLASH):
+        case RSFT_T(KC_SLASH):
+            return true;
+        case RALT_T(KC_DOT):
+            return true;
+        case RGUI_T(KC_COMMA):
             return true;
         default:
             return false;
