@@ -101,3 +101,20 @@ void oledkit_render_info_user(void) {
 }
 #endif
 
+bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(1, KC_SPACE):
+            return true;
+        case LCTL_T(KC_A):
+            return true;
+        case LSFT_T(KC_A):
+            return true;
+        case RCTL_T(KC_SEMICOLON):
+            return true;
+        case RCTL_T(KC_SLASH):
+            return true;
+        default:
+            return false;
+    }
+}
+

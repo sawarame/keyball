@@ -43,8 +43,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAPPING_TERM 165 // ホールド判定される時間(ミリ秒)
 
-#define PERMISSIVE_HOLD 
-#define RETRO_TAPPING
+#define PERMISSIVE_HOLD
+#define RETRO_TAPPING_PER_KEY
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
