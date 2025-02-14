@@ -36,10 +36,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAP_CODE_DELAY 5
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#define AUTO_MOUSE_DEFAULT_LAYER 4
+#define AUTO_MOUSE_DEFAULT_LAYER 5
 #define AUTO_MOUSE_TIME 350
 
-#define DYNAMIC_KEYMAP_LAYER_COUNT 5 // レイヤー数
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6 // レイヤー数
 
 #define TAPPING_TERM 165 // ホールド判定される時間(ミリ秒)
 

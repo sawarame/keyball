@@ -53,17 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-// Automatic Mouse Layer を有効にする
-#ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-void pointing_device_init_user(void) {
-    set_auto_mouse_enable(true);
-}
-#endif
-
 layer_state_t layer_state_set_user(layer_state_t state) {
-  // Auto enable scroll mode when the highest layer is 1
-  keyball_set_scroll_mode(get_highest_layer(state) == 1);
-  return state;
+    // Auto enable scroll mode when the highest layer is 3
+    keyball_set_scroll_mode(get_highest_layer(state) == 3);
+    return state;
 }
 
 #ifdef OLED_ENABLE
@@ -76,37 +69,3 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
-
-
-bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-      case LT(1, KC_SPACE):
-          return true;
-      case LCTL_T(KC_A):
-          return true;
-      case LSFT_T(KC_Z):
-          return true;
-      case LCTL_T(KC_LEFT_BRACKET):
-          return true;
-      case LSFT_T(KC_RIGHT_BRACKET):
-          return true;
-      case LALT_T(KC_X):
-          return true;
-      case LGUI_T(KC_C):
-          return true;
-      case RCTL_T(KC_SEMICOLON):
-          return true;
-      case RSFT_T(KC_SLASH):
-          return true;
-      case RCTL_T(KC_QUOTE):
-          return true;
-      case RSFT_T(KC_BACKSLASH):
-          return true;
-      case RALT_T(KC_DOT):
-          return true;
-      case RGUI_T(KC_COMMA):
-          return true;
-      default:
-          return false;
-  }
-}
