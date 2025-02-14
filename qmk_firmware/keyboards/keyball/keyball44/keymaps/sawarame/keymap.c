@@ -61,22 +61,9 @@ void pointing_device_init_user(void) {
 #endif
 
 layer_state_t layer_state_set_user(layer_state_t state) {
-    // Auto enable scroll mode when the highest layer is 1
-    keyball_set_scroll_mode(get_highest_layer(state) == 1);
-
-    // レイヤー4の時は Automatic Mouse Layer を無効にする
-    #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
-    switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
-        case 3:
-            state = remove_auto_mouse_layer(state, false);
-            set_auto_mouse_enable(false);
-            break;
-        default:
-            set_auto_mouse_enable(true);
-            break;
-    }
-    #endif
-
+    // Auto enable scroll mode when the highest layer is 3
+    keyball_set_scroll_mode(get_highest_layer(state) == 3}
+);
     return state;
 }
 
