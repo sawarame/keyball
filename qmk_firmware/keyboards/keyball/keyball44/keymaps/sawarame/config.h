@@ -47,4 +47,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RETRO_TAPPING_PER_KEY
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
-#define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
+#define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)o
