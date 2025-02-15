@@ -55,10 +55,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 layer_state_t layer_state_set_user(layer_state_t state) {
 
-  // レイヤー4の時は Automatic Mouse Layer を無効にする
+  // レイヤー3の時は Automatic Mouse Layer を無効にする
   #ifdef POINTING_DEVICE_AUTO_MOUSE_ENABLE
   switch(get_highest_layer(remove_auto_mouse_layer(state, true))) {
-      case 4:
+      case 3:
           state = remove_auto_mouse_layer(state, false);
           set_auto_mouse_enable(false);
           break;
@@ -68,8 +68,8 @@ layer_state_t layer_state_set_user(layer_state_t state) {
   }
   #endif
   
-  // Auto enable scroll mode when the highest layer is 4
-  keyball_set_scroll_mode(get_highest_layer(state) == 4);
+  // Auto enable scroll mode when the highest layer is 3
+  keyball_set_scroll_mode(get_highest_layer(state) == 3);
 
   return state;
 }
