@@ -51,3 +51,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define RGBLIGHT_SLEEP  // allows us to use rgblight_suspend() and rgblight_wakeup() in keymap.c
 #define RGBLIGHT_TIMEOUT 10000 // ms
+
+#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT // qmk2.7移行でキーボードが反転しないようにする
