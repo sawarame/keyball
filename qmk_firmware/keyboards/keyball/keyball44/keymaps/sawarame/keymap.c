@@ -91,7 +91,7 @@ bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
           return true;
       case LT(2, KC_MINUS):
           return true;
-      case LT(3, KC_ESCAPEs):
+      case LT(3, KC_ESCAPE):
           return true;
       case LCTL_T(KC_A):
           return true;
