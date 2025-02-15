@@ -49,7 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
 
-#define DRIVER_LED_TOTAL 74
+#define DRIVER_LED_TOTAL 60
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 125 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
 #define RGB_MATRIX_DEFAULT_HUE 125 // Sets the default hue value, if none has been set
 #define RGB_MATRIX_DEFAULT_SAT 255 // Sets the default saturation value, if none has been set
