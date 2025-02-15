@@ -27,10 +27,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#    define RGBLIGHT_EFFECT_SNAKE
 //#    define RGBLIGHT_EFFECT_KNIGHT
 //#    define RGBLIGHT_EFFECT_CHRISTMAS
-#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
+//#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
 //#    define RGBLIGHT_EFFECT_RGB_TEST
 //#    define RGBLIGHT_EFFECT_ALTERNATING
-#    define RGBLIGHT_EFFECT_TWINKLE
+//#    define RGBLIGHT_EFFECT_TWINKLE
 #endif
 
 #define TAP_CODE_DELAY 5
@@ -48,3 +48,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define KEYBALL_CPI_DEFAULT 1100 // マウス速度 (default: 500)
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
+
+#define DRIVER_LED_TOTAL 74
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 125 // limits maximum brightness of LEDs to 200 out of 255. If not defined maximum brightness is set to 255
+#define RGB_MATRIX_DEFAULT_HUE 125 // Sets the default hue value, if none has been set
+#define RGB_MATRIX_DEFAULT_SAT 255 // Sets the default saturation value, if none has been set
+#define RGB_MATRIX_DEFAULT_VAL 125 // Sets the default brightness value, if none has been set
+
+#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#define ENABLE_RGB_MATRIX_TYPING_HEATMAP
+#define RGB_MATRIX_TYPING_HEATMAP_SPREAD 32
+#define RGB_MATRIX_TYPING_HEATMAP_AREA_LIMIT 16
+#define RGB_MATRIX_TYPING_HEATMAP_DECREASE_DELAY_MS 25
+
+#define RGB_MATRIX_KEYPRESSES // reacts to keypresses
+#define ENABLE_RGB_MATRIX_SOLID_REACTIVE_MULTIWIDE
+
+#define RGB_MATRIX_DEFAULT_MODE RGB_MATRIX_TYPING_HEATMAP// Sets the default mode, if none has been set
