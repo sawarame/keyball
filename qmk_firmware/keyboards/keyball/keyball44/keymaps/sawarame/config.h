@@ -50,4 +50,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
 
 #define RGBLIGHT_SLEEP  // allows us to use rgblight_suspend() and rgblight_wakeup() in keymap.c
-#define RGBLIGHT_TIMEOUT 100 // ms
+#define RGBLIGHT_TIMEOUT 10000 // ms
