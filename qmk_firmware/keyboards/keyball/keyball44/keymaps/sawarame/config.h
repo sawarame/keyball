@@ -36,12 +36,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAP_CODE_DELAY 5
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
-#define AUTO_MOUSE_DEFAULT_LAYER 5
+#define AUTO_MOUSE_DEFAULT_LAYER 3
 #define AUTO_MOUSE_TIME 350
 
 #define DYNAMIC_KEYMAP_LAYER_COUNT 6 // レイヤー数
 
-#define TAPPING_TERM 165 // ホールド判定される時間(ミリ秒)
+#define TAPPING_TERM 180 // ホールド判定される時間(ミリ秒)
 
 #define PERMISSIVE_HOLD
 #define RETRO_TAPPING_PER_KEY
@@ -50,6 +50,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define KEYBALL_SCROLL_DIV_DEFAULT 6 // スクロール速度 (default: 4)
 
 #define RGBLIGHT_SLEEP  // allows us to use rgblight_suspend() and rgblight_wakeup() in keymap.c
-#define RGBLIGHT_TIMEOUT 10000 // ms
-
-#define SPLIT_HAND_MATRIX_GRID_LOW_IS_LEFT // qmk2.7移行でキーボードが反転しないようにする
+#define RGBLIGHT_TIMEOUT 15000 // ms
